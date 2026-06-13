@@ -8,12 +8,14 @@
         body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; max-width: 800px; margin: 0 auto; padding: 20px; color: #333; }
         h1 { color: #6366f1; border-bottom: 2px solid #6366f1; padding-bottom: 10px; }
         h2 { color: #4f46e5; margin-top: 30px; }
+        h3 { color: #6366f1; }
         .updated { color: #666; font-size: 14px; }
         .lang-links { margin-bottom: 20px; }
         .lang-links a { margin-right: 15px; color: #6366f1; }
         table { width: 100%; border-collapse: collapse; margin: 15px 0; }
         th, td { border: 1px solid #ddd; padding: 10px; text-align: left; }
         th { background-color: #f5f5f5; }
+        .notice { background-color: #fff3cd; border-left: 4px solid #ffc107; padding: 10px 15px; margin: 15px 0; }
     </style>
 </head>
 <body>
@@ -25,74 +27,109 @@
         <a href="/fitup-privacy/es/">Español</a>
     </div>
 
-    <h1>Política de Privacidad de Fitup</h1>
-    <p class="updated">Última actualización: 10 de enero de 2026</p>
+    <h1>Fitup Política de Privacidad</h1>
+    <p class="updated">Última actualización: 13 de junio de 2026</p>
 
-    <h2>1. Información que Recopilamos</h2>
-    <p>Fitup ("Empresa", "nosotros") recopila la siguiente información:</p>
+    <h2>1. Finalidad de la recopilación y el uso</h2>
+    <p>Fitup (la "Empresa") recopila y utiliza datos personales con los siguientes fines:</p>
+    <ul>
+        <li>Registro y gestión de cuentas, y servicio según el rol (miembro, instructor, gerente de sucursal)</li>
+        <li>Reservas de clases, gestión de asistencia (QR / sin cita) y gestión de cupones</li>
+        <li>Registros de salud y composición corporal (InBody), y recomendaciones de comidas y registro de ingesta</li>
+        <li>Servicios de comunidad (publicaciones, comentarios, fotos, videos) y moderación de seguridad</li>
+        <li>Mensajería entre miembros (chat)</li>
+        <li>Notificaciones push y recordatorios de comidas</li>
+        <li>Atención al cliente y resolución de disputas</li>
+    </ul>
+
+    <h2>2. Datos personales recopilados</h2>
     <table>
-        <tr><th>Categoría</th><th>Información</th><th>Propósito</th></tr>
-        <tr><td>Requerido</td><td>Correo electrónico, Nombre de usuario</td><td>Identificación y provisión del servicio</td></tr>
-        <tr><td>Opcional</td><td>Foto de perfil, Número de teléfono</td><td>Conveniencia del servicio</td></tr>
-        <tr><td>Automático</td><td>Info del dispositivo, Datos de uso</td><td>Mejora del servicio y análisis</td></tr>
+        <tr><th>Tipo</th><th>Elementos</th><th>Finalidad</th></tr>
+        <tr><td>Obligatorio</td><td>Correo electrónico o número de teléfono, apodo, credenciales (contraseña/PIN)</td><td>Identificación del miembro y prestación del servicio</td></tr>
+        <tr><td>Opcional</td><td>Foto de perfil, número de teléfono</td><td>Comodidad de uso</td></tr>
+        <tr><td>Salud (opcional)</td><td>Altura, peso, composición corporal, resultados de InBody (puntuación, TMB, grasa corporal, etc.), objetivos y nivel de actividad</td><td>Funciones de salud y recomendación de comidas (ingresados manualmente o autocompletados mediante OCR de una foto de la hoja de resultados de InBody)</td></tr>
+        <tr><td>Dieta (opcional)</td><td>Objetivos de comidas (calorías/macros), comidas recomendadas, registros de ingesta real, historial de búsqueda de alimentos, ingesta de agua</td><td>Recomendaciones de comidas y registro nutricional</td></tr>
+        <tr><td>Comunidad (opcional)</td><td>Contenido de publicaciones/comentarios, imágenes/videos adjuntos, registros de me gusta/bloqueo/denuncia, mensajes de chat</td><td>Funciones de comunidad y mensajería</td></tr>
+        <tr><td>Automático</td><td>Información del dispositivo, registros de uso de la app, token push (FCM)</td><td>Mejora del servicio, análisis y notificaciones</td></tr>
     </table>
 
-    <h2>2. Cómo Usamos Su Información</h2>
-    <p>Usamos su información para:</p>
+    <h2>3. Tratamiento de la información de salud, InBody y dieta</h2>
+    <p>La Empresa almacena en su cuenta los datos de salud y composición corporal que usted ingresa o que se extraen mediante reconocimiento óptico de caracteres (OCR) de una foto de la hoja de resultados de InBody, junto con sus registros de comidas recomendadas, ingesta real, búsqueda de alimentos e ingesta de agua, para ofrecer funciones de gestión de la salud.</p>
+    <div class="notice">
+        <strong>⚠️ Aviso médico:</strong> La información y las recomendaciones de salud, nutrición y comidas que ofrece Fitup tienen únicamente fines informativos y de referencia general y <strong>no constituyen diagnóstico, prescripción ni tratamiento médico.</strong> Consulte siempre a un médico u otro profesional cualificado para las decisiones relacionadas con la salud.
+    </div>
+    <p>La información de salud y dieta se muestra solo a usted y se elimina al eliminar su cuenta (véase la Sección 8).</p>
+
+    <h2>4. Contenido de la comunidad y almacenamiento de archivos</h2>
+    <p>Las publicaciones, comentarios, imágenes y videos que publique en la comunidad pueden ser visibles para otros usuarios. Los archivos de imagen y video adjuntos se almacenan en Cloudflare R2.</p>
     <ul>
-        <li>Proporcionar y mantener nuestro Servicio</li>
-        <li>Procesar reservas de clases y seguimiento de asistencia</li>
-        <li>Gestionar cupones y membresías</li>
-        <li>Enviar notificaciones push</li>
-        <li>Proporcionar funciones de comunidad</li>
-        <li>Responder a consultas de clientes</li>
+        <li><strong>Eliminación permanente de publicaciones:</strong> Cuando usted o un administrador elimina una publicación, se eliminan la publicación, los comentarios y los me gusta, y también <strong>se eliminan permanentemente los archivos de imagen y video almacenados en R2.</strong></li>
+        <li><strong>Bloqueo:</strong> Las publicaciones de usuarios bloqueados se eliminan de inmediato de su feed.</li>
     </ul>
 
-    <h2>3. Retención de Datos</h2>
-    <p>Retenemos su información personal mientras sea necesario para los propósitos descritos en esta política. Cuando los datos ya no sean necesarios, los eliminamos de forma segura.</p>
-
-    <h2>4. Compartir Información</h2>
-    <p>No vendemos su información personal. Podemos compartir su información con:</p>
+    <h2>5. Mensajería (chat)</h2>
     <ul>
-        <li>Gerentes de centros de fitness (para gestión de miembros)</li>
-        <li>Proveedores de servicios que asisten nuestras operaciones</li>
-        <li>Autoridades legales cuando lo requiera la ley</li>
+        <li><strong>Salir de una conversación:</strong> En una conversación con un usuario que sigue activo, "Salir" la oculta solo de su propia lista (permanece en la lista de la otra persona) y puede reaparecer cuando llega un mensaje nuevo.</li>
+        <li><strong>Conversaciones con usuarios dados de baja:</strong> Una conversación cuya otra parte ha eliminado su cuenta puede eliminarse permanentemente.</li>
     </ul>
 
-    <h2>5. Sus Derechos</h2>
-    <p>Usted tiene derecho a:</p>
+    <h2>6. Notificaciones push y recordatorios de comidas</h2>
+    <p>La Empresa envía notificaciones push como recordatorios de reserva, asistencia, comunidad y comidas. Algunas notificaciones, incluidos los recordatorios de comidas, se envían solo si usted lo acepta (opt-in) y pueden desactivarse en cualquier momento en la configuración de la app o del dispositivo.</p>
+
+    <h2>7. Encargados (subprocesadores) y divulgación a terceros</h2>
+    <p>La Empresa no proporciona datos personales a terceros sin su consentimiento. Para prestar el servicio, la Empresa utiliza los siguientes subprocesadores:</p>
     <ul>
-        <li>Acceder a sus datos personales</li>
-        <li>Corregir datos inexactos</li>
-        <li>Solicitar la eliminación de sus datos</li>
-        <li>Retirar el consentimiento</li>
-        <li>Portabilidad de datos</li>
+        <li><strong>Google Firebase (autenticación, base de datos, push):</strong> autenticación de cuentas, almacenamiento de datos, notificaciones</li>
+        <li><strong>Cloudflare R2:</strong> almacenamiento de archivos de imagen y video de la comunidad</li>
+        <li><strong>Apple / Google:</strong> procesamiento de compras dentro de la app</li>
     </ul>
-    <p>Puede ejercer estos derechos a través de la configuración de la aplicación o contactándonos.</p>
+    <p>Por lo demás, los datos personales pueden divulgarse cuando usted lo haya consentido previamente, cuando lo exija la ley, o para proporcionar información del miembro al gerente/instructor de su sucursal a efectos de la prestación del servicio.</p>
 
-    <h2>6. Seguridad de Datos</h2>
-    <p>Implementamos medidas de seguridad apropiadas para proteger su información:</p>
+    <h2>8. Datos eliminados y conservados al darse de baja</h2>
+    <p><strong>Eliminados:</strong> Al darse de baja, se eliminan su perfil, los registros de salud/InBody/dieta, las publicaciones/comentarios/adjuntos de la comunidad (incluidos los de R2), los chats, las notificaciones y los datos de asistencia/reserva/cupones.</p>
+    <p><strong>Conservados:</strong> Los registros contables como pagos y liquidaciones pueden conservarse durante los períodos indicados, de forma separada/anonimizada, cuando la ley aplicable exija su conservación.</p>
     <ul>
-        <li>Cifrado de datos personales</li>
-        <li>Transmisión segura de datos</li>
-        <li>Controles de acceso y autenticación</li>
-        <li>Evaluaciones de seguridad regulares</li>
+        <li>Registros sobre contratos o retractación de la suscripción: 5 años</li>
+        <li>Registros sobre pagos y suministro de bienes: 5 años</li>
+        <li>Registros sobre quejas de consumidores o gestión de disputas: 3 años</li>
     </ul>
 
-    <h2>7. Privacidad de los Niños</h2>
-    <p>Nuestro Servicio no está destinado a menores de 13 años. No recopilamos información de menores de 13 años intencionalmente.</p>
+    <h2>9. Tratamiento de datos según el rol</h2>
+    <ul>
+        <li><strong>Miembro:</strong> trata sus propios datos de reserva, asistencia, cupones, salud, dieta y comunidad.</li>
+        <li><strong>Instructor:</strong> trata la información de asistencia de las clases asignadas y los miembros inscritos.</li>
+        <li><strong>Gerente de sucursal:</strong> trata la información de operación, miembros y liquidación de la sucursal. Al darse de baja un gerente, los datos del local se eliminan o conservan según el estado del local.</li>
+    </ul>
 
-    <h2>8. Transferencias Internacionales de Datos</h2>
-    <p>Su información puede ser transferida y procesada en países distintos al suyo. Garantizamos las salvaguardas apropiadas.</p>
+    <h2>10. Política de denuncias y revisión por administradores</h2>
+    <p>Las denuncias de contenido de la comunidad se gestionan de la siguiente manera:</p>
+    <ul>
+        <li>El contenido denunciado se <strong>oculta del feed del propio denunciante.</strong></li>
+        <li>Los tipos graves, como el contenido sexual o ilegal, se <strong>ocultan temporalmente (reversible)</strong> a la espera de revisión, evitando la exposición pública.</li>
+        <li>La <strong>eliminación final del contenido y la suspensión de usuarios las decide la revisión y el criterio del administrador</strong> (el contenido no se elimina automáticamente por una sola denuncia).</li>
+        <li>Si una denuncia resulta falsa, el contenido se restaura y el denunciante falso puede ser objeto de sanciones.</li>
+    </ul>
 
-    <h2>9. Cambios a Esta Política</h2>
-    <p>Podemos actualizar esta Política de Privacidad periódicamente. Le notificaremos de cualquier cambio publicando la nueva política en la aplicación.</p>
+    <h2>11. Destrucción de los datos personales</h2>
+    <p>Cuando vence el período de conservación o se cumple la finalidad del tratamiento, la Empresa destruye los datos personales sin demora.</p>
 
-    <h2>10. Contáctenos</h2>
-    <p>Para preguntas sobre esta Política de Privacidad, contáctenos en:</p>
-    <p>Correo electrónico: privacy@fitup.app</p>
+    <h2>12. Sus derechos</h2>
+    <p>Puede solicitar en cualquier momento el acceso, la corrección, la eliminación o la suspensión del tratamiento de sus datos personales, a través de la configuración de la app o del servicio de atención al cliente.</p>
+
+    <h2>13. Medidas técnicas de protección</h2>
+    <ul>
+        <li>Cifrado de los datos personales y protección en tránsito</li>
+        <li>Medidas técnicas contra ataques informáticos</li>
+        <li>Restricción de acceso y gestión de privilegios</li>
+    </ul>
+
+    <h2>14. Responsable de protección de datos</h2>
+    <p>Correo: kywoon07@bearto.studio</p>
+
+    <h2>15. Cambios en esta política</h2>
+    <p>Esta política puede cambiar conforme a las leyes y actualizaciones de políticas; los cambios se anunciarán dentro de la app.</p>
 
     <hr>
-    <p style="text-align: center; color: #666;">© 2026 Fitup. Todos los derechos reservados.</p>
+    <p style="text-align: center; color: #666;">© 2026 BEARTO. All rights reserved.</p>
 </body>
 </html>
