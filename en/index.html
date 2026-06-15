@@ -28,7 +28,7 @@
     </div>
 
     <h1>Fitup Privacy Policy</h1>
-    <p class="updated">Last updated: June 13, 2026</p>
+    <p class="updated">Last updated: June 15, 2026</p>
 
     <h2>1. Purpose of Collection and Use</h2>
     <p>Fitup ("the Company") collects and uses personal information for the following purposes:</p>
@@ -46,19 +46,20 @@
     <table>
         <tr><th>Type</th><th>Items</th><th>Purpose</th></tr>
         <tr><td>Required</td><td>Email or phone number, nickname, credentials (password/PIN)</td><td>Member identification and service delivery</td></tr>
+        <tr><td>Required</td><td>Date of birth</td><td>Age verification (e.g., confirming the user is 14 or older) and service operation (see Section 10)</td></tr>
         <tr><td>Optional</td><td>Profile photo, phone number</td><td>Service convenience</td></tr>
         <tr><td>Health (optional)</td><td>Height, weight, body composition, InBody results (score, BMR, body fat, etc.), fitness goals and activity level</td><td>Health and meal-recommendation features (entered manually or auto-filled via OCR of an InBody result sheet photo)</td></tr>
         <tr><td>Diet (optional)</td><td>Meal goals (calories/macros), recommended meals, actual intake logs, food-search history, water intake</td><td>Meal recommendations and nutrition logging</td></tr>
         <tr><td>Community (optional)</td><td>Post/comment content, attached images/videos, like/block/report records, chat messages</td><td>Community and messaging features</td></tr>
-        <tr><td>Automatic</td><td>Device information, app usage logs, push token (FCM)</td><td>Service improvement, analytics, and notifications</td></tr>
+        <tr><td>Automatic</td><td>Device information, app usage logs, push token (FCM), advertising identifier</td><td>Service improvement, analytics, notifications, and ad delivery (see Section 8)</td></tr>
     </table>
 
     <h2>3. Processing of Health, InBody, and Diet Information</h2>
-    <p>The Company stores health and body-composition data that you enter or that is extracted via optical character recognition (OCR) from an InBody result-sheet photo, together with your meal recommendations, actual intake, food-search, and water-intake logs, in your account to provide health-management features.</p>
+    <p>The Company stores health and body-composition data that you enter or that is extracted via optical character recognition (OCR) from an InBody result-sheet photo, together with your meal recommendations, actual intake, food-search, and water-intake logs, in your account to provide health-management features. Health and body-composition data may constitute sensitive information; the Company collects and uses it only where you have entered and consented to it in order to use the relevant feature, and uses it solely for the purpose of providing health-management features.</p>
     <div class="notice">
         <strong>⚠️ Medical disclaimer:</strong> The health, nutrition, and meal information and recommendations provided by Fitup are for general informational and reference purposes only and are <strong>not medical diagnosis, prescription, or treatment.</strong> Always consult a physician or other qualified professional for health-related decisions.
     </div>
-    <p>Health and diet information is shown only to you, and is deleted when you delete your account (see Section 8).</p>
+    <p>Health and diet information is shown only to you, and is deleted when you delete your account (see Section 11).</p>
 
     <h2>4. Community Content and File Storage</h2>
     <p>Posts, comments, images, and videos you publish in the community may be visible to other users. Attached image and video files are stored on Cloudflare R2.</p>
@@ -82,10 +83,32 @@
         <li><strong>Google Firebase (auth, database, push):</strong> account authentication, data storage, notifications</li>
         <li><strong>Cloudflare R2:</strong> storage of community image and video files</li>
         <li><strong>Apple / Google:</strong> in-app purchase processing</li>
+        <li><strong>Google AdMob:</strong> in-app advertising (see Section 8)</li>
     </ul>
     <p>Personal information may otherwise be disclosed where you have consented in advance, where required by law, or to provide member information to the branch manager/instructor of your branch for service delivery.</p>
 
-    <h2>8. Data Deleted and Retained Upon Account Withdrawal</h2>
+    <h2>8. Advertising</h2>
+    <p>The Company may display in-app advertisements through Google AdMob to operate the service.</p>
+    <ul>
+        <li>The Company currently serves <strong>non-personalized advertising</strong> that does not track users.</li>
+        <li>Advertising-related data, such as the advertising identifier, may be processed in accordance with Google AdMob's policies.</li>
+        <li>You can limit ad personalization (interest-based ads) in your device settings.<br>― Android: Settings → Google → Ads → "Opt out of Ads Personalization"<br>― iOS: Settings → Privacy &amp; Security → Tracking → turn off "Allow Apps to Request to Track"</li>
+        <li>For more on how Google processes advertising data, see the Google Privacy Policy (policies.google.com/privacy).</li>
+    </ul>
+
+    <h2>9. International Transfer of Personal Information</h2>
+    <p>To provide the service, personal information may be transferred to (processed and stored in) locations outside your country as set out below. By agreeing to this policy you consent to the international transfers below; you may refuse, but service use may then be restricted.</p>
+    <table>
+        <tr><th>Recipient</th><th>Country</th><th>Items transferred</th><th>Purpose</th><th>Retention period</th></tr>
+        <tr><td>Google LLC (Firebase)</td><td>United States, etc.</td><td>Account/authentication data, usage data, push token</td><td>Authentication, data storage, notifications</td><td>Until account deletion or termination of the processing agreement</td></tr>
+        <tr><td>Cloudflare, Inc. (R2)</td><td>United States, etc.</td><td>Community image and video files</td><td>File storage</td><td>Until post deletion or account deletion</td></tr>
+        <tr><td>Google LLC (AdMob)</td><td>United States, etc.</td><td>Advertising identifier, device information</td><td>In-app ad delivery</td><td>Per Google's policies</td></tr>
+    </table>
+
+    <h2>10. Children Under 14</h2>
+    <p>This service is available only to users who are <strong>14 years of age or older</strong>. The Company <strong>does not knowingly collect personal information from children under 14.</strong> The Company verifies age via date of birth at sign-up, and registration is restricted for anyone determined to be under 14. If the Company learns that it has collected personal information from a child under 14, it will delete such information without delay.</p>
+
+    <h2>11. Data Deleted and Retained Upon Account Withdrawal</h2>
     <p><strong>Deleted:</strong> Upon withdrawal, your profile, health/InBody/diet records, community posts/comments/attachments (including on R2), chats, notifications, and attendance/reservation/coupon data are deleted.</p>
     <p><strong>Retained:</strong> Accounting records such as payment and settlement may be retained for the periods below, in a separated/anonymized form, where retention is required by applicable law.</p>
     <ul>
@@ -94,14 +117,14 @@
         <li>Records on consumer complaints or dispute handling: 3 years</li>
     </ul>
 
-    <h2>9. Role-Based Data Processing</h2>
+    <h2>12. Role-Based Data Processing</h2>
     <ul>
         <li><strong>Member:</strong> processes your own reservation, attendance, coupon, health, diet, and community data.</li>
         <li><strong>Instructor:</strong> processes attendance information for assigned classes and enrolled members.</li>
         <li><strong>Branch manager:</strong> processes the operations, member, and settlement information of the branch. Upon a branch manager's withdrawal, store data is deleted or retained depending on the store status.</li>
     </ul>
 
-    <h2>10. Reporting and Administrator Review Policy</h2>
+    <h2>13. Reporting and Administrator Review Policy</h2>
     <p>Reports of community content are handled as follows:</p>
     <ul>
         <li>Reported content is <strong>hidden from the reporter's own feed.</strong></li>
@@ -110,23 +133,32 @@
         <li>If a report is found to be false, the content is restored and the false reporter may be subject to penalties.</li>
     </ul>
 
-    <h2>11. Destruction of Personal Information</h2>
+    <h2>14. Destruction of Personal Information</h2>
     <p>When the retention period expires or the processing purpose is achieved, the Company destroys the personal information without delay.</p>
 
-    <h2>12. Your Rights</h2>
+    <h2>15. Your Rights</h2>
     <p>You may at any time request access to, correction of, deletion of, or suspension of processing of your personal information, via the in-app settings or customer support.</p>
 
-    <h2>13. Technical Measures for Protection</h2>
+    <h2>16. Technical Measures for Protection</h2>
     <ul>
         <li>Encryption of personal information and protection in transit</li>
         <li>Technical measures against hacking and intrusion</li>
         <li>Access restriction and privilege management</li>
     </ul>
 
-    <h2>14. Privacy Officer</h2>
+    <h2>17. Remedies for Rights Infringement</h2>
+    <p>To seek redress for personal-information infringement, you may contact the following Korean authorities for dispute resolution or consultation:</p>
+    <ul>
+        <li>Personal Information Dispute Mediation Committee: +82-1833-6972 (www.kopico.go.kr)</li>
+        <li>Privacy Infringement Report Center: 118 (privacy.kisa.or.kr)</li>
+        <li>Supreme Prosecutors' Office, Cyber Investigation: 1301 (www.spo.go.kr)</li>
+        <li>National Police Agency, Cyber Bureau: 182 (ecrm.police.go.kr)</li>
+    </ul>
+
+    <h2>18. Privacy Officer</h2>
     <p>Email: kywoon07@bearto.studio</p>
 
-    <h2>15. Changes to This Policy</h2>
+    <h2>19. Changes to This Policy</h2>
     <p>This policy may change in line with laws and policy updates; changes will be announced within the app.</p>
 
     <hr>
